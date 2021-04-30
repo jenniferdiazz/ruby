@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tabla</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Market_id</th>
+      <th>Price</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @datos.each do |dato| %>
+      <tr>
+      <td><%= @id2 %></td>
+        <td><%= @precio %></td>
+        
+    
+      
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dato', new_dato_path %>
